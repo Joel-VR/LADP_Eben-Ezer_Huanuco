@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, 
+        #1e90ff,
+        #ffd700,
+        #ff8c00,
+        #ff0000
+    );
+
+    min-height: 100vh;
+}
+
+header, section, footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ========================= */
+/*  MODO CELULAR            */
+/* ========================= */
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px;
+    }
+}
+
