@@ -68,4 +68,30 @@ footer {
         margin: 10px;
     }
 }
+header {
+    background: transparent;   /* quita el fondo blanco */
+    color: white;               /* texto blanco para que se vea bien */
+    text-align: center;
+    padding: 1px 20px;
+}
 
+.facebook{
+    width: 100px;
+    height: 100px;
+}
+
+.actividades{
+    width: 250px;
+    height: 250px;
+}
+
+.logo{
+    width: 250px;
+    height: 250px;
+}
+    h1{
+    color: black;
+}
+p{
+    color: black;
+}
