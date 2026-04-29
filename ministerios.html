@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -373,32 +373,203 @@ footer {
     }
 }
 
+/* Contact Section */
+.contact-section {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 16px rgba(18, 68, 144, 0.08);
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.contact-form-container {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-logo {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    object-fit: contain;
+}
+
+.contact-header h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 1.8rem;
+}
+
+.contact-header p {
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--muted);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: black; /* As per image */
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+.contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(120deg, var(--primary-dark), var(--primary)); /* Blue background as in image */
+    color: var(--white);
+    border-radius: 14px;
+    padding: 20px;
+    position: relative; /* For the yellow corner */
+    overflow: hidden;
+}
+
+.contact-info-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px; /* Size of the yellow corner */
+    height: 40px;
+    background-color: var(--accent); /* Yellow color */
+    clip-path: polygon(0 0, 100% 0, 0 100%); /* Triangle shape */
+}
+
+.contact-info-container h3 {
+    color: var(--white);
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-info-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info-container ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end; /* Align to the right as in image */
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: var(--white); /* Make text links white */
+    text-decoration: none;
+    font-size: 1.5rem; /* Adjust size for text icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form-container,
+    .contact-info-container {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
     </style>
 </head>
 <body>
-    <header class="site-header">
-        <div class="brand-wrap">
-            <a href="index.html"><img src="LOGOS EBEN CON BORDE.png" class="logo" alt="Logo Iglesia Eben-Ezer"></a>
-            <div>
-                <h1>Ministerios y Direcciones</h1>
-                <p>Conoce nuestras áreas de trabajo y servicio ministerial</p>
-            </div>
-        </div>
-    </header>
 
-    <nav class="main-nav">
-        <div class="dropdown">
-            <button class="dropbtn" type="button">Quiénes somos</button>
-            <div class="dropdown-menu">
-                <a href="historia.html">Historia</a>
-                <a href="mision-vision.html">Misión y visión</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
+<header class="site-header">
+    <div class="brand-wrap">
+        <a href="index.html"><img src="LOGOS EBEN CON BORDE.png" class="logo" alt="Logo Iglesia Eben-Ezer"></a>
+        <div>
+            <h1>Ministerios y Direcciones</h1>
+            <p>Conoce nuestras áreas de trabajo y servicio ministerial</p>
         </div>
-        <a href="ministerios.html">Ministerios y direcciones</a>
-        <a href="eventos.html">Eventos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="dropdown">
+        <button class="dropbtn" type="button">Quiénes somos</button>
+        <div class="dropdown-menu">
+            <a href="historia.html">Historia</a>
+            <a href="mision-vision.html">Misión y Visión</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn" type="button">Ministerios y direcciones</button>
+        <div class="dropdown-menu">
+            <a href="ministerios.html">Ministerios</a>
+            <a href="direcciones.html">Direcciones</a>
+        </div>
+    </div>
+    <a href="eventos.html">Eventos</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
 
     <main class="container">
         <section class="card">
