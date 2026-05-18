@@ -5,10 +5,12 @@ require_once __DIR__ . '/../includes/db.php';
 $events = db_all('events');
 $messages = db_all('contact_messages');
 $ministries = db_all('ministry_content');
+$decisions = db_all('decisiones');
 
 $eventCount = count($events);
 $messageCount = count(array_filter($messages, function($m) { return !isset($m['read']) || $m['read'] == 0; }));
 $ministryCount = count($ministries);
+$decisionCount = count($decisions);
 
 $unreadMessages = array_filter($messages, function($m) { return !isset($m['read']) || $m['read'] == 0; });
 usort($unreadMessages, function($a, $b) { return strcmp($b['created_at'], $a['created_at']); });
@@ -37,6 +39,7 @@ $recentEvents = array_slice($recentEvents, 0, 5);
     <a href="index.php" class="active">Dashboard</a>
     <a href="events.php">Eventos</a>
     <a href="ministries.php">Ministerios</a>
+    <a href="decisions.php">Decisiones</a>
     <a href="messages.php">Mensajes</a>
     <a href="settings.php">Configuración</a>
     <a href="../index.php" target="_blank">Ver Sitio →</a>
@@ -52,6 +55,10 @@ $recentEvents = array_slice($recentEvents, 0, 5);
         <div class="stat-card">
             <div class="number"><?= $ministryCount ?></div>
             <div class="label">Ministerios</div>
+        </div>
+        <div class="stat-card">
+            <div class="number"><?= $decisionCount ?></div>
+            <div class="label">Decisiones por Cristo</div>
         </div>
         <div class="stat-card">
             <div class="number"><?= $messageCount ?></div>

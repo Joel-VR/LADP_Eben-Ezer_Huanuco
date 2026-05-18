@@ -141,6 +141,11 @@ function db_init() {
     if (!file_exists($dataDir . '/contact_messages.json')) {
         db_write('contact_messages', []);
     }
+
+    // Decisiones
+    if (!file_exists($dataDir . '/decisiones.json')) {
+        db_write('decisiones', []);
+    }
 }
 
 db_init();

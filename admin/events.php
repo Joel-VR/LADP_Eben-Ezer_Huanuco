@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/../includes/db.php';
 
@@ -79,7 +79,7 @@ if (isset($_GET['edit'])) {
     <a href="index.php">Dashboard</a>
     <a href="events.php" class="active">Eventos</a>
     <a href="ministries.php">Ministerios</a>
-    <a href="messages.php">Mensajes</a>
+    <a href="decisions.php">Decisiones</a><a href="messages.php">Mensajes</a>
     <a href="settings.php">Configuración</a>
     <a href="../index.php" target="_blank">Ver Sitio →</a>
 </nav>

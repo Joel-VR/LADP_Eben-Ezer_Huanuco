@@ -50,6 +50,7 @@ if (!isset($currentPage)) $currentPage = basename($_SERVER['PHP_SELF']);
             <a href="direcciones.php">Direcciones</a>
         </div>
     </div>
+    <a href="decision.php">Quiero entregarme a Jesús</a>
     <a href="eventos.php">Eventos</a>
     <a href="contacto.php">Contacto</a>
 </nav>

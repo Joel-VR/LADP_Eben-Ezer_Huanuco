@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once __DIR__ . '/auth.php';
 require_once __DIR__ . '/../includes/db.php';
 
@@ -83,7 +83,7 @@ foreach (db_all('settings') as $s) $settings[$s['key']] = $s['value'];
     <a href="index.php">Dashboard</a>
     <a href="events.php">Eventos</a>
     <a href="ministries.php">Ministerios</a>
-    <a href="messages.php">Mensajes</a>
+    <a href="decisions.php">Decisiones</a><a href="messages.php">Mensajes</a>
     <a href="settings.php" class="active">Configuración</a>
     <a href="../index.php" target="_blank">Ver Sitio →</a>
 </nav>
