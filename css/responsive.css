@@ -1,0 +1,64 @@
+@media (max-width: 768px) {
+    .brand-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .main-nav a {
+        margin: 0;
+    }
+
+    .dropdown,
+    .dropbtn {
+        width: 100%;
+    }
+
+    .dropbtn {
+        text-align: center;
+        padding: 0;
+    }
+
+    .hero-image {
+        height: 320px;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.45rem;
+    }
+
+    .ministry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ministry-row {
+        grid-template-columns: 1fr;
+    }
+
+    .ministry-thumb {
+        height: 210px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form-container,
+    .contact-info-container {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}

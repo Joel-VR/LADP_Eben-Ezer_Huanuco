@@ -1,0 +1,95 @@
+.site-header {
+    background: linear-gradient(120deg, var(--primary-dark), var(--primary));
+    color: var(--white);
+    padding: 20px 16px;
+}
+
+.brand-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 88px;
+    height: 88px;
+    object-fit: contain;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.site-header p {
+    margin: 6px 0 0;
+    color: #dbe8ff;
+}
+
+.main-nav {
+    background-color: var(--white);
+    border-bottom: 3px solid var(--accent);
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: var(--primary-dark);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.main-nav a:hover {
+    color: var(--accent);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: 0;
+    background-color: transparent;
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: var(--accent);
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 220px;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px rgba(11, 47, 103, 0.12);
+    z-index: 50;
+    padding: 8px 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    margin: 0;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}

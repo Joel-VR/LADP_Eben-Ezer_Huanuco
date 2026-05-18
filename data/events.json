@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "title": "Aniversario de la Iglesia",
+        "description": "Celebra con nosotros el aniversario de nuestra congregación.",
+        "date": "2026-02-20",
+        "image": "img\/actividades.jpg",
+        "active": 1,
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 2,
+        "title": "Reunión de Oración",
+        "description": "Momento especial de oración e intercesión.",
+        "date": "2026-06-15",
+        "image": "img\/actividades.jpg",
+        "active": 1,
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 3,
+        "title": "Campaña Evangelística",
+        "description": "Alcanzando vidas con el evangelio de Cristo.",
+        "date": "2026-08-10",
+        "image": "img\/actividades.jpg",
+        "active": 1,
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 4,
+        "title": "Conferencia de Familias",
+        "description": "Fortaleciendo hogares y relaciones.",
+        "date": "2026-09-05",
+        "image": "img\/actividades.jpg",
+        "active": 1,
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 5,
+        "title": "Culto Juvenil Especial",
+        "description": "Noche de alabanza y palabra para jóvenes.",
+        "date": "2026-07-20",
+        "image": "img\/actividades.jpg",
+        "active": 1,
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    }
+]

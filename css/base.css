@@ -1,0 +1,28 @@
+:root {
+    --primary: #124490;
+    --primary-dark: #0b2f67;
+    --accent: #d2a126;
+    --bg: #f5f7fb;
+    --white: #ffffff;
+    --text: #1d2430;
+    --muted: #5c6675;
+    --border: #dfe5ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background-color: var(--bg);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}

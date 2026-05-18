@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "key": "church_name",
+        "value": "Iglesia Eben-Ezer",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 2,
+        "key": "church_email",
+        "value": "sedenacional@ladp.org.pe",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 3,
+        "key": "church_phone",
+        "value": "+51 913 629 693 | (01) 4236207",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 4,
+        "key": "church_address",
+        "value": "Av. Colombia 325, Pueblo Libre",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 5,
+        "key": "church_hours",
+        "value": "Cierra a las 6 p.m.",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    },
+    {
+        "id": 6,
+        "key": "facebook_url",
+        "value": "https:\/\/www.facebook.com\/profile.php?id=100067152944125&locale=es_LA",
+        "created_at": "2026-05-18 06:00:15",
+        "updated_at": "2026-05-18 06:00:15"
+    }
+]
