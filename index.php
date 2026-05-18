@@ -71,8 +71,26 @@ require_once 'includes/header.php';
             <div class="social-links">
                 <a href="<?= htmlspecialchars($settings['facebook_url'] ?? '#') ?>" aria-label="Facebook" target="_blank">f</a>
             </div>
+            <div style="margin-top: 20px; text-align: center;">
+                <button class="btn-donate" onclick="document.getElementById('donationModal').classList.add('is-visible')">❤️ Donaciones</button>
+            </div>
         </div>
     </div>
 </section>
+
+<div class="modal-overlay" id="donationModal" onclick="if(event.target===this)this.classList.remove('is-visible')">
+    <div class="modal-box modal-donation">
+        <button class="modal-close" onclick="this.closest('.modal-overlay').classList.remove('is-visible')">&times;</button>
+        <h3>Donaciones</h3>
+        <p class="donation-subtitle">Tu generosidad nos ayuda a seguir adelante</p>
+        <img src="img/actividades.jpg" alt="QR Yape" class="qr-yape">
+        <div class="yape-info">
+            <p class="yape-number">📱 Yape: <strong><?= htmlspecialchars($settings['church_phone'] ?? '+51 913 629 693') ?></strong></p>
+            <p class="yape-thanks">¡Gracias por tu contribución! Dios bendiga tu generosidad.</p>
+            <p class="yape-verse"><em>"Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre."</em></p>
+            <p class="yape-verse-ref">— 2 Corintios 9:7</p>
+        </div>
+    </div>
+</div>
 
 <?php require_once 'includes/footer.php'; ?>
