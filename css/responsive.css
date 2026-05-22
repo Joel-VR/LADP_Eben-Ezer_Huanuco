@@ -61,4 +61,53 @@
     .social-links {
         justify-content: center;
     }
+
+    /* Dirección de Comunicaciones - Mobile */
+    .social-media-hub {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .social-link {
+        padding: 16px 12px;
+        font-size: 0.85rem;
+    }
+
+    .social-link svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .livestream-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .livestream-item .btn-small {
+        width: 100%;
+        text-align: center;
+    }
+
+    .portfolio-featured {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-other {
+        grid-template-columns: 1fr;
+    }
+
+    .livestream-live {
+        padding: 24px 16px;
+    }
+
+    .livestream-live h3 {
+        font-size: 1.4rem;
+    }
+
+    .btn-livestream {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
 }

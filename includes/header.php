@@ -20,6 +20,9 @@ if (!isset($currentPage)) $currentPage = basename($_SERVER['PHP_SELF']);
     <?php if (!empty($includeContact)): ?>
     <link rel="stylesheet" href="css/contact.css">
     <?php endif; ?>
+    <?php if ($currentPage === 'direccion-comunicaciones.php'): ?>
+    <link rel="stylesheet" href="css/communications.css">
+    <?php endif; ?>
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
