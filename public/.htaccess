@@ -1,0 +1,27 @@
+# public/.htaccess — clean URLs → front controller
+RewriteEngine On
+
+# Serve existing files/dirs directly (styles, assets, admin via symlink)
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Legacy .php → clean URL (301)
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteRule ^historia\.php$ /history [R=301,L]
+RewriteRule ^mision-vision\.php$ /mission-vision [R=301,L]
+RewriteRule ^ministerios\.php$ /ministries [R=301,L]
+RewriteRule ^direcciones\.php$ /directions [R=301,L]
+RewriteRule ^eventos\.php$ /events [R=301,L]
+RewriteRule ^contacto\.php$ /contact [R=301,L]
+RewriteRule ^decision\.php$ /decision [R=301,L]
+RewriteRule ^lectura-diaria\.php$ /daily-reading [R=301,L]
+RewriteRule ^ministerio-jovenes\.php$ /ministry-youth [R=301,L]
+RewriteRule ^ministerio-ninos\.php$ /ministry-kids [R=301,L]
+RewriteRule ^ministerio-familia\.php$ /ministry-family [R=301,L]
+RewriteRule ^ministerio-evangelismo\.php$ /ministry-evangelism [R=301,L]
+RewriteRule ^direccion-misiones\.php$ /direction-missions [R=301,L]
+RewriteRule ^direccion-comunicaciones\.php$ /direction-communications [R=301,L]
+
+# Everything else → front controller
+RewriteRule ^ index.php [QSA,L]

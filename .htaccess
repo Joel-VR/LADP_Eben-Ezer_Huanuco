@@ -1,14 +1,10 @@
-# Apache configuration for Iglesia Eben-Ezer
-# Redirect .html requests to .php
+# Apache configuration for Iglesia Eben-Ezer (local dev, DocumentRoot=root)
+# Production DocumentRoot is public/ — see public/.htaccess
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)\.html$ $1.php [L,R=301]
 
-# Protect database directory
-<IfModule mod_rewrite.c>
-    RewriteRule ^data/ - [F,L]
-</IfModule>
+# Protect internals: never serve these directly
+RewriteRule ^(src|views|routes|db|scripts|data)/ - [F,L]
+RewriteRule ^includes/ - [F,L]
 
 # Prevent direct access to .db files
 <FilesMatch "\.db$">
@@ -16,7 +12,8 @@ RewriteRule ^(.*)\.html$ $1.php [L,R=301]
     Deny from all
 </FilesMatch>
 
-# Prevent direct access to includes
-<IfModule mod_rewrite.c>
-    RewriteRule ^includes/ - [F,L]
-</IfModule>
+# Block env files
+<FilesMatch "^\.env">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

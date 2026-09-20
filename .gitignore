@@ -1,0 +1,9 @@
+.codegraph/
+data/*.json
+data/app.db
+.env
+vendor/
+# Local dev junctions (Dockerfile recreates them as symlinks in prod)
+/public/styles
+/public/assets
+/public/admin

@@ -1,0 +1,9 @@
+.git/
+.codegraph/
+data/*.json
+data/app.db
+css/
+img/
+includes/
+*.html
+admin/css/

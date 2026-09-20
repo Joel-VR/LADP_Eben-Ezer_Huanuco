@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: eben-ezer-huanuco
+    runtime: docker
+    plan: free
+    repo: https://github.com/TU-USUARIO/TU-REPO
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health.php
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false # Neon pooled URL, e.g. postgres://user:pass@ep-xxx.neon.tech/db?sslmode=require
+      - key: ADMIN_USER
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false # set a strong password in dashboard
+      - key: BASE_URL
+        value: ""
