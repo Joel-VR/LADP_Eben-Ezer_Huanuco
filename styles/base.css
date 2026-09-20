@@ -2,11 +2,14 @@
     --primary: #124490;
     --primary-dark: #0b2f67;
     --accent: #d2a126;
+    --accent-red: #e1392a;
+    --accent-blue: #338af3;
     --bg: #f5f7fb;
     --white: #ffffff;
     --text: #1d2430;
     --muted: #5c6675;
     --border: #dfe5ef;
+    --font-main: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
 * {
@@ -15,7 +18,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: var(--font-main);
     color: var(--text);
     background-color: var(--bg);
     line-height: 1.6;
